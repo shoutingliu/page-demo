@@ -1,0 +1,398 @@
+body {
+    width: 100%;
+}
+
+h5 {
+    font-size: 20px;
+    color: #635555;
+}
+
+article {
+    width: 100%;
+    background-image: url('../imgs/carabg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+section {
+    margin-bottom: 350px;
+}
+
+/*安心履歷*/
+.care {
+    display: flex;
+    /* justify-content:baseline; */
+    padding-top: 200px;
+}
+
+.care img {
+    position: absolute;
+    z-index: 1;
+}
+
+.care-content {
+    width: 85%;
+    height: 650px;
+    background-color: #FFF0E2;
+    border-radius: 250px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    /* left: 300px; */
+    margin: 0 20%;
+}
+
+.care-txt {
+    margin: auto;
+}
+
+/*永續發展*/
+.crs {
+    display: flex;
+    justify-content: end;
+    padding-top: 200px;
+
+}
+
+.content {
+    width: 1388px;
+    height: 650px;
+    background-color: #FFF0E2;
+    border-radius: 200px 0 0 200px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 80px;
+
+
+}
+
+.txt {
+    width: 500px;
+    height: 300px;
+    /* margin-left: 100px; */
+    text-align: center;
+    line-height: 45px;
+    margin: 100px 0px 0px 40px;
+}
+
+.crs img {
+    position: absolute;
+    top: -140px;
+    right: 0;
+    z-index: 1;
+}
+
+/*輪播*/
+.slider_container {
+    width: 100%;
+    height: 693px;
+    position: relative;
+    border-bottom-width: 100px;
+    background-color: #8e7373;
+}
+
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.slider_container div {
+    -webkit-animation: round 15s linear infinite;
+    animation: round 15s linear infinite;
+}
+
+
+/*
+    3張圖 過場時間1秒 每張放5秒 週期18秒
+    100%/18秒=5.55%(每秒)
+    5.55%=1秒
+*/
+
+
+@-webkit-keyframes round {
+    5.55% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1   秒 淡入*/
+    }
+
+    33.3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 6秒靜止*/
+    }
+
+    38.88% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 6-7秒淡出*/
+    }
+}
+
+@keyframes round {
+    5.55% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+
+    33.3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 6秒靜止*/
+    }
+
+    38.88% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 6-7秒淡出*/
+    }
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+
+/* news */
+.news {
+    display: flex;
+
+}
+
+.box {
+    margin: 30px;
+    position: relative;
+    /* bottom: 0; */
+
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    width: 310px;
+    height: 0;
+    display: flex;
+    line-height: 35px;
+
+    padding-left: 10px;
+    position: absolute;
+    bottom: 4px;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.box:hover .mask {
+    height: 74px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+
+/*/影音媒體*/
+.videoteam {
+    display: flex;
+}
+
+.myvideo {
+    width: 329px;
+    margin-left: 10px;
+
+}
+
+.myvideo h5 {
+    margin: 10px 0 25px 0;
+    color: #635555;
+
+}
+
+.myvideo p {
+    color: #D88065;
+    line-height: 20px;
+}
+
+.image-video {
+    position: relative;
+}
+
+.image-video:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../imgs/play.png')no-repeat;
+    background-size: contain;
+    top: 40%;
+    left: 41%;
+
+}
+
+.card-container {
+    -webkit-perspective: 700;
+    -moz-perspective: 700;
+    perspective: 700;
+    display: flex;
+    height: 400px;
+}
+
+.card {
+    margin: 20px;
+    background-color: #FFF6E8;
+    border-radius: 30px;
+    width: 200px;
+    height: 00px;
+    text-align: center;
+    line-height: 200px;
+    color: #635555;
+    transition: all 0.8s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+
+
+
+}
+
+.front,
+.back {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.card a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #635555;
+}
+
+.front {
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.182));
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: #FFF6E8;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.142));
+}
+
+.card:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.myslider {
+    -webkit-box-align: center;
+    align-items: center;
+    background: #ffffff;
+    display: -webkit-box;
+    display: flex;
+    height: 400px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 274px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider::before,
+.slider::after {
+
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 274px;
+    width: 526px;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mos Burger</title>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.cycle.all.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $('.banner').after('<div class="swiper">').cycle({
+                fx: 'scrollLeft',
+                pager: '.swiper',
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <a href="./index.html"><img src="./imgs/logo.png" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="./menu.html">美味餐點</a></li>
+                <li><a href="./shop.html">門市據點</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./about.html">關於我們</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- 大圖輪播區 -->
+        <div class="myCycle">
+            <div class="banner">
+                <img src="./imgs/banner01.jpg" alt="">
+                <img src="./imgs/banner02.jpg" alt="">
+                <img src="./imgs/banner03.jpg" alt="">
+            </div>
+
+        </div>
+        <!-- 最新消息區 -->
+        <section id="news">
+            <h1 data-aos="fade-right" data-aos-duration="3000">NEWS</h1>
+            <div  data-aos="fade-right" data-aos-duration="2000"data-aos-delay="100" class="list">
+                <div class="left-right">
+                    <a data-aos="fade-right" data-aos-duration="3000"data-aos-delay="100" href="#2">
+                        <h4 class="date">2022.11.01</h4>
+                        <h4 class="title">MOS LIFE 摩斯報報11月刊</h4>
+                        <img src="./imgs/arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="left-right">
+                    <a data-aos="fade-right" data-aos-duration="3000" data-aos-delay="150" href="#2">
+                        <h4 class="date">2022.10.22</h4>
+                        <h4 class="title">MOS美味派對</h4>
+                        <img src="./imgs/arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="left-right">
+                    <a data-aos="fade-right" data-aos-duration="3000" data-aos-delay="200" href="#2">
+                        <h4 class="date">2022.10.01</h4>
+                        <h4 class="title">週二早晨 用MOS CAFE幫自己打氣</h4>
+                        <img src="./imgs/arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="left-right">
+                    <a data-aos="fade-right" data-aos-duration="3000" data-aos-delay="250" href="#2">
+                        <h4 class="date">2022.09.12</h4>
+                        <h4 class="title">高墾線合作店鋪名單</h4>
+                        <img src="./imgs/arrow.png" alt="">
+                    </a>
+                </div>
+                <div class="left-right">
+                    <a data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" href="#2">
+                        <h4 class="date">2022.09.07</h4>
+                        <h4 class="title">來摩斯消費用悠遊卡嗶卡享5%</h4>
+                        <img src="./imgs/arrow.png" alt="">
+                    </a>
+                </div>
+                <a  data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" class="button" href="./news.html">view more..</a>
+            </div>
+            <span data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" id="sidetext">EST.1972 Mountain, Ocean, Sun</span>
+        </section>
+
+        <!-- 中間圖片區 -->
+        <div class="myslider">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./imgs/top-line1.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line2.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line3.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line4.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line1.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line2.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line3.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line4.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line1.png" height="274" width="526" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./imgs/top-line2.png" height="274" width="526" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 人氣商品輪播區 -->
+        <section class="myCarousel">
+            <h4>人氣商品</h4>
+            <div id="carousel">
+                <div class="hideLeft">
+                    <a href="#2">
+                        <img src="./imgs/listitem1.png">
+                    </a>
+                </div>
+                <div class="prevLeftSecond">
+                    <a href="#3">
+                        <img src="./imgs/listitem2.png">
+                    </a>
+                </div>
+                <div class="prev">
+                    <a href="#3">
+                        <img src="./imgs/listitem3.png">
+                    </a>
+                </div>  
+                <div class="selected">
+                    <a href="item1-1.html">
+                        <img src="./imgs/listitem4.png">
+                    </a>
+                </div>
+                <div class="next">
+                    <a href="#3">
+                        <img src="./imgs/listitem5.png">
+                    </a>
+                </div>
+                <div class="nextRightSecond">
+                    <a href="#3">
+                        <img src="./imgs/listitem1.png">
+                    </a>
+                </div>
+                <div class="hideRight">
+                    <a href="#3">
+                        <img src="./imgs/listitem2.png">
+                    </a>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left fa-2xl" style="color:#FFF;"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right fa-2xl" style="color:#FFF;"></i></button>
+            </div>
+        </section>
+        <!-- 安心食品及永續發展區 -->
+        <article>
+            <section>
+                <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300" class="care">
+                    <div>
+                        <img src="./imgs/carefood1.png" alt="">
+                    </div>
+                    <div class="care-content">
+                        <div class="care-txt">
+                            <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">安心食品</h3>
+                            <h4 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="450">摩斯漢堡的用心</h4>
+                            <h6 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500">摩斯漢堡為了落實高標準食安要求，</h6>
+                            <h6 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="550" id="txt-s">嚴控門市商品、飲用水水質、廠商供貨食材等，</h6>
+                            <h6 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">為消費者進行把關。</h6>
+                            <a data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="600" href="#1">瞭解更多>></a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" class="crs">
+                    <div class="crs-content">
+                        <div class="crs-txt">
+                            <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">永續發展</h3>
+                            <h6 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="450">秉持「貢獻人類、貢獻社會」的經營理念，</h6>
+                            <h6 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">不斷推出創新商品與全新服務，</h6>
+                            <h6 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="550">提供消費者健康安心的餐點、</h6>
+                            <h6 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">便利優質的服務，</h6>
+                            <h6 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="650">創造品牌新價值。</h6>
+                            <a data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="600" href="#1">瞭解更多>></a>
+                        </div>
+                        <div>
+                            <img src="./imgs/carefood2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- 頁尾區 -->
+    <footer>
+        <div class="container">
+            <div class="footer-item">
+                <p>關於我們
+                <div class="footer-nav">
+                    <a href="#brand">>品牌故事</a>
+                    <a href="#brand">>公司治理</a>
+                    <a href="#brand">>永續發展</a>
+                </div>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p>服務專區
+                <div class="footer-nav">
+                    <a href="#brand">>投資專區</a>
+                    <a href="#brand">>利害專區</a>
+                </div>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p>聯絡我們
+                <div class="footer-nav">
+                    <a href="#brand">>人才招募</a>
+                    <a href="#brand">>意見回饋</a>
+                </div>
+                </p>
+            </div>
+            <div class="icon">
+                <a href="#brand">
+                    <img src="./imgs/Instagram.png" alt="">
+                </a>
+                <a href="#brand">
+                    <img src="./imgs/facebook.png" alt="">
+                </a>
+                <a href="#brand">
+                    <img src="./imgs/youtube.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="copy">
+            <p>客服專線：0800-208-128</p>
+            <p>106台北市大安區仁愛路三段136號2樓201室</p>
+            <p>© 2022 MOS Food Services, INC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.14em;
+}
+
+h2 {
+    font-size: 32px;
+    /* line-height: 37px; */
+}
+
+h3 {
+    font-size: 28px;
+    /* line-height: 32px; */
+}
+
+h4 {
+    font-size: 26px;
+    color: #D88065;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+h5 {
+    font-size: 20px;
+    /* line-height: 23px; */
+    color: #635555;
+
+}
+
+h6 {
+    font-size: 18px;
+    color: #635555;
+    margin-bottom: 1%;
+
+    /* line-height: 21px; */
+}
+
+p {
+    font-size: 20px;
+    color: #635555;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+
+}
+
+s {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+    width: 100%;
+}
+
+/* header start */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 130px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* position: relative; */
+}
+
+header img {
+    margin-top: 8px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px 25px 0;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #D88065;
+    letter-spacing: 0.1em;
+    transition: 0.2s;
+
+}
+
+#navbar li a:hover {
+    color: #f0b19e;
+}
+
+#navbar ul {
+    position: absolute;
+    display: none;
+    border-radius: 20px;
+
+
+}
+
+#navbar li:hover ul {
+    display: block;
+    background-color: #FFF;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+
+
+
+/* 商品圖區 */
+
+.myItem {
+    width: 985px;
+    height: 400px;
+    background-color: #FFF6E8;
+    border-radius: 15px;
+    padding: 40px 60px;
+    display: flex;
+    margin: 136px auto 100px auto;
+
+}
+
+.img-item {
+    width: 300px;
+    height: 315px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.15));
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+.img-item img {
+    border-radius: 20px;
+
+}
+
+.content h4 {
+    margin-bottom: 25px;
+}
+
+.content .price {
+    margin-top: 75px;
+    color: #D88065;
+
+}
+
+/* 營養表 */
+.sheet {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.list {
+    margin: 30px;
+}
+
+.list div {
+    width: 540px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #ED9579 1px solid;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.sheet h4{
+    font-size: 20px;
+}
+.list div h5 {
+    width: 110px;
+}
+
+.list .sec-list {
+    padding-left: 45px;
+}
+
+/* 翻轉卡片 */
+.txt{
+    margin-left: 23%; ;
+}
+.card-container {
+    height: 400px;
+    -webkit-perspective: 700;
+    -moz-perspective: 700;
+    perspective: 700;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 40px; 
+    background-color:#FFF6E8;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color:#635555;
+    transition: all 0.8s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+    
+  }
+
+  .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+
+
+
+  }
+  .front,
+  .back {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+  }
+  .card a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #635555;
+  }
+  .front{
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.182));
+  }
+  .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: #FFF6E8;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.142));
+  }
+  .card:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #FFF0E2;
+    padding-top: 1%;
+}
+
+.container {
+    display: flex;
+    margin: 2% 20% 0 20%;
+}
+
+.container .footer-item p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.container .icon {
+    height: 25px;
+    display: flex;
+    vertical-align: middle;
+    margin-left: 85px;
+
+}
+
+.container .icon a {
+    display: block;
+    text-decoration: none;
+    margin: 0 5px;
+
+}
+
+.footer-item {
+    margin: 0 8%;
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #635555;
+}
+
+.copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    margin: 50px auto auto 0;
+}
+
+.copy p {
+    margin: 10px 15px 0px;
+}

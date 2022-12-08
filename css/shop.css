@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.14em;
+}
+
+h2 {
+    font-size: 32px;
+    /* line-height: 37px; */
+}
+
+h3 {
+    font-size: 28px;
+    /* line-height: 32px; */
+}
+
+h4 {
+    font-size: 26px;
+    color: #635555;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+h5 {
+    font-size: 18px;
+    /* line-height: 23px; */
+    color: #635555;
+    letter-spacing: 0.1em;
+
+}
+
+h6 {
+    font-size: 18px;
+    /* line-height: 21px; */
+}
+
+p {
+    font-size: 16px;
+    color: #635555;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+
+}
+
+s {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+    width: 100%;
+    
+}
+
+/* header start */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 130px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* position: relative; */
+}
+
+header img {
+    margin-top: 8px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px 25px 0;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #D88065;
+    letter-spacing: 0.1em;
+    transition: 0.2s;
+
+}
+
+#navbar li a:hover {
+    color: #f0b19e;
+}
+
+#navbar ul {
+    position: absolute;
+    display: none;
+    border-radius: 20px;
+
+
+}
+
+#navbar li:hover ul {
+    display: block;
+    background-color: #FFF;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+
+.main{
+    width: 100%;
+}
+.tit {
+    text-align: center;
+    margin-top: 5%;
+    color: #635555;
+}
+
+/* 選擇器 */
+.top{
+    width: 100%;
+    padding: 5% 35% 5% 19%;
+    display: flex;
+
+    
+}
+select{
+    width: 100%;
+    height: 48px;
+    padding: 6px 12px;
+    background-color: #FFF6E8;
+    background-image: none;
+    border: transparent;
+    border-radius: 10px;
+    color: #635555;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 7% 0 2%;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* list */
+.list-map{
+    display: flex;
+    height: 100%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+}
+.shoplist {
+    width: 600px;
+    height: 800px;
+    padding:0 10% ;
+    overflow: scroll;
+    transform-origin: center calc(50vh);
+    margin:  0 0 0 6%;
+  }
+
+  .shoplist::-webkit-scrollbar {display:none}
+  
+  .child {
+    width: 350px;
+    height: 290px;
+    padding: 21% 15% 15% 15%;
+    background-color: #FFF6E8;
+    border-radius: 10px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10%;
+}
+  .child h4 {
+    margin: 0 0 5% 2%;
+    font-size: 22px;
+    color: #D88065;
+}
+  .child div{
+    display: flex;
+    margin-bottom:5% ;
+    align-items: center;
+  }
+
+  .child div img{
+    width: 32px;   
+    height: 32px;
+    margin-right: 3%;
+  }
+
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #FFF0E2;
+    padding-top: 1%;
+}
+
+.container {
+    display: flex;
+    margin: 2% 20% 0 20%;
+}
+
+.container .footer-item p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.container .icon {
+    height: 25px;
+    display: flex;
+    vertical-align: middle;
+    margin-left: 85px;
+
+}
+
+.container .icon a {
+    display: block;
+    text-decoration: none;
+    margin: 0 5px;
+
+}
+
+.footer-item {
+    margin: 0 8%;
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #635555;
+}
+
+.copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    margin: 50px auto auto 0;
+}
+
+.copy p {
+    margin: 10px 15px 0px;
+}
