@@ -206,13 +206,13 @@ header img {
 }
 
 .left-right {
-    width: 630px;
+    width: 100%;
     border-bottom: 1px #ED9579 solid;
 
 }
 
 .left-right a {
-    width: 630px;
+    width: 100%;
     height: 30px;
     font-size: 20px;
     display: block;
@@ -288,12 +288,7 @@ header img {
 
 }
 
-#middlePics{
-    width: 100%;
-}
-#middlePics img{
-    width: 100%;
-}
+
 
 /* 人氣商品*/
 .myCarousel {
@@ -440,16 +435,20 @@ header img {
 
 /* carefood */
 article {
+    height: 100%;
     width: 100%;
     background-image: url('../imgs/carabg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    padding-bottom: 25%;
 
 }
 
 article section {
-    margin-bottom: 350px;
+    width: 100%;
+    margin-bottom: 5%;
 }
+
 
 /*安心履歷*/
 .care {
@@ -478,8 +477,9 @@ article section {
 }
 
 .care-txt {
-    margin: 8% 44%;
-    margin-left: 40%;
+    margin: 8% 0 0 8%;
+    display: flex;
+    flex-direction: column;
     line-height: 75px;
 
 }
@@ -540,6 +540,7 @@ article section {
 
 /*永續發展*/
 .crs {
+    width: 100%;
     display: flex;
     justify-content: end;
     padding-top: 200px;
@@ -547,32 +548,31 @@ article section {
 }
 
 .crs-content {
-    width: 85%;
+    width: 80%;
     height: 650px;
     background-color: #FFF0E2;
     border-radius: 200px 0 0 200px;
     display: flex;
     justify-content: flex-start;
     position: relative;
-    padding-left: 80px;
 
 
 }
 
 .crs-txt {
-    width: 500px;
-    height: 300px;
-    text-align: center;
-    line-height: 60px;
-    margin: 110px 0px 0px 90px;
+    margin: 8% 0 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     line-height: 65px;
 }
 
 .crs img {
     position: absolute;
-    top: -140px;
+    top:-10%;
     right: 0;
     z-index: 99;
+    width: 40%;
 }
 
 /* footer */
@@ -608,7 +608,7 @@ footer {
 }
 
 .footer-item {
-    margin: 0 8%;
+    margin: 0 7%;
 }
 
 
@@ -646,6 +646,7 @@ footer {
     display: -webkit-box;
     display: flex;
     height: 400px;
+    width: 100%;
     -webkit-box-pack: center;
     justify-content: center;
 }
@@ -657,8 +658,8 @@ footer {
     }
 
     100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
     }
 }
 
@@ -709,10 +710,10 @@ footer {
     animation: scroll 40s linear infinite;
     display: -webkit-box;
     display: flex;
-    width: calc(250px * 14);
+    width:100%;
 }
 
-.slider .slide {
+/* .slider .slide {
     height: 274px;
     width: 526px;
-}
+} */
