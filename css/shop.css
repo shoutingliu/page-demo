@@ -134,7 +134,7 @@ header img {
 /* 選擇器 */
 .top{
     width: 100%;
-    padding: 5% 35% 5% 19%;
+    padding: 5% 35% 5% 14%;
     display: flex;
 
     
@@ -161,15 +161,13 @@ select{
     display: flex;
     height: 100%;
     margin-bottom: 10%;
-    padding-left: 5%;
 }
 .shoplist {
-    width: 600px;
+    width: 350px;
     height: 800px;
-    padding:0 10% ;
     overflow: scroll;
     transform-origin: center calc(50vh);
-    margin:  0 0 0 6%;
+    margin:  0 5% 0 15%;
   }
 
   .shoplist::-webkit-scrollbar {display:none}
@@ -177,7 +175,7 @@ select{
   .child {
     width: 350px;
     height: 290px;
-    padding: 21% 15% 15% 15%;
+    padding: 40px 35px 0 35px;
     background-color: #FFF6E8;
     border-radius: 10px;
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -200,6 +198,13 @@ select{
     margin-right: 3%;
   }
 
+  .map{
+    width: 100%;
+  }
+  .map{
+    width: 45%;
+
+  }
 
 
 
