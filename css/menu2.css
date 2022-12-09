@@ -112,9 +112,13 @@ header img {
 
 /* 大圖區 */
 #menu-banner {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    padding: 5% 20%;
+}
+#menu-banner img{
+    width: 100%;
 }
 
 /* 類別區 */

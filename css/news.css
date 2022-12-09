@@ -120,7 +120,7 @@ header img {
 }
 
 .boxes {
-    width: 65%;
+    width: 68%;
     display: flex;
     flex-wrap: wrap;
     /* justify-content:space-around; */
@@ -157,7 +157,7 @@ header img {
 
 /*/影音媒體*/
 .videoteam{
-    width: 65%;
+    width: 68%;
     display: flex;
     flex-wrap: wrap;
     /* justify-content:; */
@@ -168,7 +168,7 @@ header img {
 .myvideo{
     width: 329px;
     /* margin-left: 10px; */
-    margin: 0 40px 65px 40px;
+    margin: 0 37px 65px 38px;
 
 
 }
