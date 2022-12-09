@@ -70,7 +70,7 @@ header {
     justify-content: space-between;
     padding: 10px 130px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -151,7 +151,7 @@ select{
     font-size: 16px;
     font-weight: 800;
     margin: 0 7% 0 2%;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -180,7 +180,7 @@ select{
     padding: 21% 15% 15% 15%;
     background-color: #FFF6E8;
     border-radius: 10px;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10%;
 }
   .child h4 {
