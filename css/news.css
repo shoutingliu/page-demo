@@ -112,6 +112,13 @@ header img {
 }
 
 /* 最新活動 */
+.news{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
 .news h4 {
     text-align: center;
     margin: 80px auto;
@@ -120,19 +127,20 @@ header img {
 }
 
 .boxes {
-    width: 68%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:space-around; */
-    margin: 0 auto 50px auto;
+  justify-content: flex-start;
+    margin: 0 auto;
  
 }
 
 .box {
-    /* margin-left:55px; */
     position: relative;
-    margin: 0 42px 65px 42px;
-    /* margin: 0 auto; */
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
 }
 
 .mask {
@@ -157,18 +165,18 @@ header img {
 
 /*/影音媒體*/
 .videoteam{
-    width: 68%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:; */
-    margin: 0 auto 50px auto;
+    justify-content:flex-start;
+    margin: 0 auto 15% auto;
 
 }
 
 .myvideo{
     width: 329px;
     /* margin-left: 10px; */
-    margin: 0 37px 65px 38px;
+    margin: 0 auto;
 
 
 }
