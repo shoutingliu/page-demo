@@ -223,14 +223,17 @@ header img {
 /* 產品區 */
 
 .cards {
-    width: 65%;
+    width: 100%;
     margin: 0 auto 50px auto;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 33px;
-    /* border: #635555 1px solid; */
+    justify-content: center;
 }
-
+.card-warpper{
+    display: flex;
+    width: 62%;
+    flex-wrap: wrap;
+}
 .card {
     width: 260px;
     height: 300px;
