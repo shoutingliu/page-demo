@@ -60,7 +60,7 @@ s {
 body {
     background: #ffffff;
     width: 100%;
-    
+
 }
 
 /* header start */
@@ -122,9 +122,10 @@ header img {
 }
 
 
-.main{
+.main {
     width: 100%;
 }
+
 .tit {
     text-align: center;
     margin-top: 5%;
@@ -132,14 +133,15 @@ header img {
 }
 
 /* 選擇器 */
-.top{
+.top {
     width: 100%;
     padding: 5% 35% 5% 14%;
     display: flex;
 
-    
+
 }
-select{
+
+select {
     width: 100%;
     height: 48px;
     padding: 6px 12px;
@@ -151,65 +153,71 @@ select{
     font-size: 16px;
     font-weight: 800;
     margin: 0 7% 0 2%;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 }
 
 
 /* list */
-.list-map{
+.list-map {
     display: flex;
     height: 100%;
     margin-bottom: 10%;
 }
+
 .shoplist {
     width: 375px;
     height: 800px;
     overflow: scroll;
     transform-origin: center calc(50vh);
-    margin:  0 5% 0 14%;
+    margin: 0 5% 0 14%;
     padding: 1% 0 0 1%;
-  }
+}
 
-  .shoplist::-webkit-scrollbar {display:none}
-  
-  .child {
+.shoplist::-webkit-scrollbar {
+    display: none
+}
+
+.child {
     width: 350px;
     height: 290px;
     padding: 40px 35px 0 35px;
     background-color: #FFF6E8;
     border-radius: 10px;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10%;
 }
-  .child h4 {
+
+.child h4 {
     margin: 0 0 5% 2%;
     font-size: 22px;
     color: #D88065;
 }
-  .child div{
-    display: flex;
-    margin-bottom:5% ;
-    align-items: center;
-  }
 
-  .child div img{
-    width: 32px;   
+.child div {
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.child div img {
+    width: 32px;
     height: 32px;
     margin-right: 3%;
-  }
+}
 
-  .map{
+.map {
     width: 45%;
     margin-top: 1%;
- 
-  }
-.back{
+}
+
+.back {
     display: flex;
     justify-content: center;
     margin-bottom: 8%;
 }
-.back a{
+
+.back a {
     display: block;
     width: 162px;
     height: 45px;
@@ -275,6 +283,7 @@ footer {
     text-decoration: none;
     color: #635555;
 }
+
 .footer-nav a:hover {
     color: #ED9579;
 }
