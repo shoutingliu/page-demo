@@ -39,7 +39,7 @@ h6 {
 
 p {
     font-size: 16px;
-    line-height: 65px;
+    color: #635555;
 
 }
 
@@ -216,8 +216,10 @@ footer {
 }
 
 .container {
+    width: 90%;
     display: flex;
-    margin: 2% 20% 0 20%;
+    justify-content: center;
+    margin: 2% auto;
 }
 
 .container .footer-item p {
@@ -256,6 +258,11 @@ footer {
     text-decoration: none;
     color: #635555;
 }
+
+.footer-nav a:hover {
+    color: #ED9579;
+}
+
 
 .copy {
     width: 100%;

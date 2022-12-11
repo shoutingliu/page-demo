@@ -594,8 +594,10 @@ footer {
 }
 
 .container {
+    width: 90%;
     display: flex;
-    margin: 2% 15% 0 15%;
+    justify-content: center;
+    margin: 2% auto;
 }
 
 .container .footer-item p {

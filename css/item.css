@@ -46,11 +46,11 @@ h6 {
 }
 
 p {
-    font-size: 20px;
-    color: #635555;
+    font-size: 16px;
+    /* color: #635555;
     font-weight: 600;
     line-height: 30px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.07em; */
 
 }
 
@@ -277,8 +277,10 @@ footer {
 }
 
 .container {
+    width: 90%;
     display: flex;
-    margin: 2% 20% 0 20%;
+    justify-content: center;
+    margin: 2% auto;
 }
 
 .container .footer-item p {
@@ -316,6 +318,9 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #635555;
+}
+.footer-nav a:hover {
+    color: #ED9579;
 }
 
 .copy {

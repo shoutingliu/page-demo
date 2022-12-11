@@ -235,7 +235,7 @@ header img {
 }
 .card-warpper{
     display: flex;
-    width: 62%;
+    width: 70%;
     flex-wrap: wrap;
 }
 .card {
@@ -304,7 +304,6 @@ header img {
 
 }
 
-
 /* footer */
 footer {
     width: 100%;
@@ -313,8 +312,10 @@ footer {
 }
 
 .container {
+    width: 90%;
     display: flex;
-    margin: 2% 20% 0 20%;
+    justify-content: center;
+    margin: 2% auto;
 }
 
 .container .footer-item p {
@@ -353,7 +354,6 @@ footer {
     text-decoration: none;
     color: #635555;
 }
-
 .footer-nav a:hover {
     color: #ED9579;
 }
