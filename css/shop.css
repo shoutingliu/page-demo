@@ -202,11 +202,13 @@ select{
   .map{
     width: 45%;
     margin-top: 1%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ 
   }
-
+.back{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+}
 .back a{
     display: block;
     width: 162px;
@@ -219,7 +221,6 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -4%;
 }
 
 
