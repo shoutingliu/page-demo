@@ -40,12 +40,14 @@ h6 {
 p {
     font-size: 16px;
     line-height: 40px;
+    color: #635555;
 
 }
 
 s {
     font-size: 14px;
     line-height: 16px;
+    text-decoration: none;
 }
 
 body,
@@ -116,7 +118,7 @@ header img {
 /*輪播*/
 .myCycle {
     width: 100%;
-    height: 693px;
+    height: 690px;
     position: relative;
     margin-bottom: 5%;
 }
@@ -647,7 +649,7 @@ footer {
     margin: 50px auto auto 0;
 }
 
-.copy p {
+.copy s {
     margin: 10px 15px 0px;
 }
 

@@ -163,11 +163,12 @@ select{
     margin-bottom: 10%;
 }
 .shoplist {
-    width: 365px;
+    width: 375px;
     height: 800px;
     overflow: scroll;
     transform-origin: center calc(50vh);
-    margin:  0 5% 0 15%;
+    margin:  0 5% 0 14%;
+    padding: 1% 0 0 1%;
   }
 
   .shoplist::-webkit-scrollbar {display:none}
@@ -199,11 +200,8 @@ select{
   }
 
   .map{
-    width: 100%;
-  }
-  .map{
     width: 45%;
-
+    margin-top: 1%;
   }
 
 
@@ -271,6 +269,6 @@ footer {
     margin: 50px auto auto 0;
 }
 
-.copy p {
+.copy s {
     margin: 10px 15px 0px;
 }
