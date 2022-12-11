@@ -39,7 +39,6 @@ h6 {
 
 p {
     font-size: 16px;
-    color: #635555;
 
 }
 
@@ -136,7 +135,7 @@ header img {
  
 }
 
-.box {
+.boxes .box {
     position: relative;
     width: 33%;
     display: flex;
@@ -158,7 +157,7 @@ header img {
     transition: all .8s;
 }
 
-.box:hover .mask {
+.boxes .box:hover .mask {
     height: 74px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFF;
@@ -214,6 +213,7 @@ footer {
     width: 100%;
     background-color: #FFF0E2;
     padding-top: 1%;
+    color: #635555;
 }
 
 .container {
